@@ -1,0 +1,15 @@
+{
+  "name": "node-web-scrape",
+  "version": "0.0.1",
+  "description": "Scrape le web.",
+  "main": "server.js",
+  "author": "Scotch",
+  "repository": "https: //github.com/d2rd/102-Web-Scraper-Node.git",
+  "license": "MIT",
+
+  "Dependencies": {
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
+  }
+}

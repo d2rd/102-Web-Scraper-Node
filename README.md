@@ -45,7 +45,7 @@ This project also gives you a great practical example of the limits that efficie
 
 Follow the tutorial here:  https://scotch.io/tutorials/scraping-the-web-with-node-js
 
-- [ ] Artifact produced is a repo
+- [x] Artifact produced is a repo
 - [ ] Can run a command to start the scraper server
 - [ ] Can scrape a single site for multiple pieces of information (i.e extracting name, director, and release date from IMDB)
 - [ ] Can store information in the form of JSON
