@@ -1,0 +1,9 @@
+//102 - Web Scraper with NodeJS
+
+USER INSTRUCTIONS
+
+1.  Start the scraper - From terminal enter 'node server.js'
+
+2.  Request a scrape - Start a blank web page and enter 'http://localhost:8081/scrape'
+
+3.  Confirm a successful operation - Look for the confirmation message 'Check your console'
