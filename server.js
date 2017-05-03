@@ -40,8 +40,13 @@ app.get('/scrape', function(req, res) {
         // In examining the DOM we notice that the title rests within the first child element of the header tag. 
         // Utilizing jQuery we can easily navigate and get the text by writing the following code:
 
+        // title = data.children().first().text();
+        // title = document.getElementsByTagName('h1')[1].innerHTML
+        // year = document.getElementsByTagName('h1')[1].children[0].innerText
         title = data.children().first().text();
+        title = $('h1')
         release = data.children().last().children().text();
+        console.log(title)
 
         json.title = title; // Once we have our title, we'll store it to the our json object.
 
@@ -90,3 +95,5 @@ Export = module.exports = app;
 
 
 //.filter may not work.
+
+//IDEA: Use regular expression to extract strings from html elements.
