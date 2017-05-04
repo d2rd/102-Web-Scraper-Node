@@ -1,11 +1,11 @@
 //This is the server that makes requests to the external website
 
-var express = require('express');
-var fs = require('fs'); //fs library gives access to the computer's file system so files can be written to disk.
-var request = require('request');
-var cheerio = require('cheerio');
-var app = express();
+var express = require('express');   //Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
+var fs = require('fs'); //fs library gives access to the computer's file system so files can be written to disk.
+var request = require('request');  //simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+var cheerio = require('cheerio');  //jQuery designed specifically for the server.
+var app = express();  
 app.get('/scrape', function(req, res) {
 
 
@@ -25,8 +25,6 @@ app.get('/scrape', function(req, res) {
 
       var $ = cheerio.load(html); //Utiltize cheerio library on the returned html (essentially gives jQuery functionality).
 
-
-
       var title, release, rating; // Define the variables we're going to capture
       var json = {
         title: "",
@@ -37,16 +35,30 @@ app.get('/scrape', function(req, res) {
 
         var data = $(this); // Store the data we filter into a variable.
 
-        // In examining the DOM we notice that the title rests within the first child element of the header tag. 
-        // Utilizing jQuery we can easily navigate and get the text by writing the following code:
+        // In examining the DOM we notice that the title rests within the first child element of the header tag.
+        //Tutorial code: 
+          //  title = data.children().first().text();
+          //         title = $('h1')
+          //         release = data.children().last().children().text();
+          //         console.log(title)
 
-        // title = data.children().first().text();
-        // title = document.getElementsByTagName('h1')[1].innerHTML
-        // year = document.getElementsByTagName('h1')[1].children[0].innerText
-        title = data.children().first().text();
-        title = $('h1')
-        release = data.children().last().children().text();
-        console.log(title)
+// My code
+        // Get Method-1 jQuery navigate and get:       
+           title = jQuery(".title_block .title_wrapper h1").title.firstChild.nodeValue //Gets all text (title and release) as trimmed text.
+           console.log('title: ', title);
+
+           release = jQuery(".title_block .title_wrapper h1 a").text(); 
+           console.log('release: ', release);
+
+           rating =  $(".subtext meta")[0].content  //Gets rating from the class '.subtext'     
+           console.log('rating: ', rating);
+
+
+        // Get Method-2 no jQuery
+         // getElementsByTagName navigate and get:
+            // title = data.children().first().text();
+            // title = document.getElementsByTagName('h1')[1].innerHTML
+            // year = document.getElementsByTagName('h1')[1].children[0].innerText
 
         json.title = title; // Once we have our title, we'll store it to the our json object.
 
