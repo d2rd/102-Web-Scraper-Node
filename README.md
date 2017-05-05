@@ -53,7 +53,7 @@ Follow the tutorial here:  https://scotch.io/tutorials/scraping-the-web-with-nod
 - [ ] Build an interface to display information extracted
 - [ ] UI is easy to navigate and intuitive
 - [x] Commit messages are concise and descriptive
-- [ ] Code is well formatted without any linting errors
+- [x ] Code is well formatted without any linting errors
 - [x] Variables, functions, CSS classes, etc. are meaningfully named
 - [x] Functions are small and serve a single purpose
 - [x] Code is well organized into a meaningful file structure
