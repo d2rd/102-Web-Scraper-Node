@@ -19,3 +19,20 @@ jQuery(".even").text()
 
 $(".subtext meta")[0].content  //Gets rating from the class '.subtext'
 "PG-13"
+
+//Tanner's Solutions
+$(".title_wrapper h1").first().clone().children().remove().end().text()
+"Anchorman 2: The Legend Continues             "
+
+$(".title_wrapper h1").first().clone().children().remove().end().text().trim()
+"Anchorman 2: The Legend Continues"
+
+$(".title_block .title_wrapper h1 a").text()
+"2013"
+
+$(".subtext meta")[0].content
+"PG-13"
+
+$(".subtext meta").first().attr('content')
+"PG-13"
+
