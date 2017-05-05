@@ -1,0 +1,690 @@
+address {
+  margin-bottom: 22px;
+  font-style: inherit;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Amiko', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.lead {
+  font-size: 24px;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+.wb-pageheader {
+  border-bottom: 2px solid #6e7172;
+  padding-bottom: 2px;
+  margin: 24px 0 24px;
+}
+
+.wb-blockquote {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #369fe0;
+  font: 18px/22px normal sans-serif;
+  letter-spacing: 0px;
+}
+
+
+/* header */
+
+.size1 {
+  font-size: 32px;
+}
+
+.size2 {
+  font-size: 28px;
+}
+
+.size3 {
+  font-size: 24px;
+}
+
+.size4 {
+  font-size: 20px;
+}
+
+.size5 {
+  font-size: 16px;
+}
+
+.size6 {
+  font-size: 12px;
+}
+
+
+/* Jumbotron */
+
+.wb-jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #dbd6d6
+}
+
+.wb-jumbotron p {
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: 'Patrick Hand', sans-serif;
+  letter-spacing: 1.5px
+}
+
+.wb-jumbotron h1,
+.wb-jumbotron .h1 {
+  color: inherit
+}
+
+.wb-container .wb-jumbotron {
+  border-radius: 6px
+}
+
+@media screen and (min-width:768px) {
+  .wb-jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px
+  }
+  .wb-container .wb-jumbotron {
+    padding-right: 56px;
+    padding-left: 56px
+  }
+  .wb-jumbotron h1,
+  .wb-jumbotron .h1 {
+    font-size: 60px
+  }
+}
+
+
+/* alert KO */
+
+.wb-alert {
+  border: 1.5px #000000;
+  border-radius: 5px;
+  border-style: solid;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 18px;
+}
+
+.wb-alert-close {
+  margin-left: 15px;
+  color: #888f91;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.4s
+}
+
+.wb-alert-close:hover {
+  color: #dbd6d6
+}
+
+
+/* List Group  KO */
+
+.wb-listgroup {
+  margin-bottom: 22px;
+  padding-left: 0px;
+  padding-right: 60%;
+}
+
+.wb-listgroup-item {
+  background-color: #ffffff;
+  border: 1px solid #dbd6d6;
+  margin-bottom: -1px;
+  padding: 10px 15px;
+  position: relative;
+  display: block;
+}
+
+
+/* default buttons KO */
+
+.wb-btn {
+  background-color: #dbd6d6;
+  border: 1.5px #000000;
+  border-style: solid;
+  outline: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px #888f91;
+}
+
+.wb-btn:active {
+  box-shadow: 0 3px #6e7172;
+  transform: translateY(3px);
+}
+
+.wb-btn:hover {
+  opacity: .85;
+}
+
+.wb-info-btn,
+.wb-info-alert {
+  background-color: #4abde0;
+}
+
+.wb-yes-btn,
+.wb-success-alert {
+  background-color: #396d31;
+}
+
+.wb-warning-btn,
+.wb-warning-alert {
+  background-color: #eddb1e;
+  color: #000000;
+}
+
+.wb-disaster-btn,
+.wb-disaster-alert {
+  background-color: #ba2828;
+}
+
+.wb-clear-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 18px;
+}
+
+.wb-clear-btn:active {
+  border: 1.5px #000000;
+  border-style: solid;
+}
+
+.wb-clear-btn:hover {
+  opacity: .85;
+  color: #ba2828;
+}
+
+
+/* Buttongroup */
+
+.wb-btn-group button {
+  background-color: #369fe0;
+  border: 2px solid blue;
+  color: white;
+  padding: 10px 24px;
+  float: left;
+}
+
+.wb-btn-group button:not(:last-child) {
+  border-right: none;
+  /* Prevent double borders */
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.wb-btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Add a background color on hover */
+
+.wb-btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.wb-btn-toolbar {
+  margin-left: -6px;
+}
+
+.wb-btn-toolbar .wb-btn-group {
+  float: left
+}
+
+.wb-btn-toolbar>.wb-btn,
+.wb-btn-toolbar>.wb-btn-group {
+  margin-left: 6px
+}
+
+
+/* Breadcrumbs */
+
+
+/*Style the list */
+
+ul.wb-breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #dbd6d6;
+  font-size: 18px;
+}
+
+
+/* Display list items side by side */
+
+ul.wb-breadcrumb li {
+  display: inline;
+}
+
+
+/* Add a pipe symbol(|) as separators */
+
+ul.wb-breadcrumb li+li:before {
+  padding: 8px;
+  color: #000000;
+  content: "|";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.wb-breadcrumb li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* Add color on mouse-over */
+
+ul.wb-breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: overline underline;
+  font-style: italic;
+}
+
+
+/* Pagination */
+
+.wb-pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.wb-pagination>li {
+  display: inline;
+}
+
+.wb-pagination>li>a,
+.wb-pagination>li>span {
+  float: left;
+  padding: 6px 12px;
+  position: relative;
+  line-height: 1.5;
+  margin-left: -1px;
+  text-decoration: none;
+  border: 1px solid #dbd6d6;
+  background-color: #ffffff;
+  color: #369fe0;
+}
+
+.wb-pagination>li:first-child>a,
+.wb-pagination>li:first-child>span {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-left: 0;
+}
+
+.wb-pagination>li:last-child>a,
+.wb-pagination>li:last-child>span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.wb-pagination a:hover {
+  background-color: #6e7172;
+  border: 1px solid #6e7172;
+  color: #ffffff;
+}
+
+
+/* Labels . */
+
+.wb-label {
+  padding: .2em .6em .3em;
+  padding-top: 0.2em;
+  padding-right: 0.6em;
+  padding-bottom: 0.3em;
+  padding-left: 0.6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .50em;
+  border-top-left-radius: 0.35em;
+  border-top-right-radius: 0.35em;
+  border-bottom-right-radius: 0.50em;
+  border-bottom-left-radius: 0.50em;
+}
+
+
+/* Label Color Classes*/
+
+.wb-default-lbl {
+  background-color: #dbd6d6;
+}
+
+.wb-info-lbl {
+  background-color: #4abde0;
+}
+
+.wb-yes-lbl {
+  background-color: #396d31;
+}
+
+.wb-warning-lbl {
+  background-color: #eddb1e;
+}
+
+.wb-disaster-lbl {
+  background-color: #ba2828;
+}
+
+.wb-orange-lbl {
+  background-color: #ff910f;
+}
+
+.wb-purple-lbl {
+  background-color: #474eff;
+}
+
+.wb-lime-lbl {
+  background-color: #75bc53;
+}
+
+
+/* Label Shape Classes  */
+
+.wb-label-default {
+  padding: 15px 32px;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  width: 50%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.wb-label-square {
+  padding: .75% .75% .75%;
+  width: 100px;
+  height: 100px;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 2;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.wb-label-oval {
+  padding: 1% 1% 1%;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 2;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.wb-label-levis {
+  padding: .2em .6em .3em;
+  padding-top: 0.2em;
+  padding-right: 0.6em;
+  padding-bottom: 0.3em;
+  padding-left: 0.6em;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 2;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .40%;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+}
+
+
+/* Panels KO */
+
+.wb-panel {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.wb-panel-heading {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid transparent;
+  padding: 10px 15px;
+}
+
+.wb-panel-title {
+  color: inherit;
+  font-weight: bold;
+}
+
+.wb-panel-body {
+  padding: 16px;
+}
+
+.wb-panel-footer {
+  background-color: #dbd6d6;
+  border-top: 1px solid #dbd6d6;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 10px 16px;
+}
+
+.wb-panel-default {
+  border-color: #dbd6d6;
+}
+
+.wb-panel-default>.wb-panel-heading {
+  color: #000000;
+  background-color: #6e7172;
+  border-color: #dbd6d6;
+}
+
+.wb-panel-info {
+  border-color: #369fe0
+}
+
+.wb-panel-info>.wb-panel-heading {
+  color: #000000;
+  background-color: #369fe0;
+  border-color: #369fe0;
+}
+
+.wb-panel-success {
+  border-color: #396d31;
+}
+
+.wb-panel-success>.wb-panel-heading {
+  color: #000000;
+  background-color: #396d31;
+  border-color: #396d31;
+}
+
+.wb-panel-warning {
+  border-color: #eddb1e;
+  color: #000000;
+}
+
+.wb-panel-warning>.wb-panel-heading {
+  color: #000000;
+  background-color: #eddb1e;
+  border-color: #eddb1e;
+}
+
+.wb-panel-disaster {
+  border-color: #ba2828;
+}
+
+.wb-panel-disaster>.wb-panel-heading {
+  color: #000000;
+  background-color: #ba2828;
+  border-color: #ba2828;
+}
+
+
+/* Wells KO */
+
+.wb-well {
+  background-color: #dbd6d6;
+  border: 1px solid #c3c3c3;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  margin-bottom: 22px;
+  min-height: 22px;
+  padding: 18px;
+}
+
+.wb-well-large {
+  border-radius: 8px;
+  padding: 26px;
+}
+
+.wb-well-small {
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.wb-well blockquote {
+  border-color: #dbd6d6;
+  border-color: rgba(0, 0, 0, .15)
+}
+
+
+/* Badges DD */
+
+
+/*<!--Badge in button-->*/
+
+
+/*<!--Badge in label-->*/
+
+
+/*<!--Badge with link-->*/
+
+
+/* Notification */
+
+.wb-badge1 {
+  position: relative;
+}
+
+.wb-badge1[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: .7em;
+  background-color: #396d31;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333333;
+}
+
+.wb-badge2 {
+  position: relative;
+  background-color: #396d31;
+}
+
+.wb-badge2[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: .7em;
+  background-color: #ba2828;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333333;
+}
+
+
+/* Thumbnail Classes */
+
+.wb-flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wb-image-rounded,
+.wb-image-circle,
+.wb-image-square {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: solid 1px #BDBED9;
+  background-color: #F5F5F8;
+  box-shadow: 1px 1px 6px #888888;
+  border-radius: 10px;
+}
+
+.wb-image-rounded img {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 6px;
+}
+
+.wb-image-circle img {
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  border-radius: 50px;
+}
+
+.wb-image-square img {
+  margin: 0px;
+  padding: 0px;
+}
