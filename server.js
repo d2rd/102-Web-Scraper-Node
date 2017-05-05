@@ -34,17 +34,17 @@ app.get('/scrape', function(req, res) {
 
         // My code
         // Get Method-1 jQuery navigate and get:
-        // console.log($(".title_wrapper h1"));
+        // 
 
         title = $(".title_wrapper h1").first().clone().children().remove().end().text().trim(); //Gets text (title without release year) as trimmed text.
-        // console.log('title: ', title);
+        // 
 
         release = $(".title_block .title_wrapper h1 a").text();
-        // console.log('release: ', release);
+        // 
 
         // rating = $(".subtext meta")[0].content
         rating = $(".subtext meta").first().attr('content'); //Gets rating from the class '.subtext'
-        // console.log('rating: ', rating);
+        // 
 
 
         // Get Method-2 no jQuery
@@ -58,7 +58,7 @@ app.get('/scrape', function(req, res) {
         //  title = data.children().first().text();
         //         title = $('h1')
         //         release = data.children().last().children().text();
-        //         console.log(title)
+        //         
 
 
         json.title = title; // Once we have our title, we'll store it to the our json object.
@@ -85,10 +85,10 @@ app.get('/scrape', function(req, res) {
       //     // Parameter 1 :  output.json - this is what the created filename will be called
       //     // Parameter 2 :  JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make our JSON easier to read
       //     // Parameter 3 :  callback function - a callback function to let us know the status of our function
-      console.log(json)
+      
 
       fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err) {
-        console.log('File successfully written! - Check your project directory for the output.json file');
+        
       })
 
       //  Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
@@ -102,7 +102,7 @@ app.get('/scrape', function(req, res) {
 })
 
 app.listen('8081');
-console.log('Magic happens on port 8081');
+
 Export = module.exports = app;
 
 
